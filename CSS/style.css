@@ -11,7 +11,7 @@ nav.navigation {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 nav.navigation > a {
@@ -24,6 +24,10 @@ nav.navigation > a:hover {
     color: #a9a9a9;
 }
 
+.image-i {
+    width: 50% ;
+    transform: rotate(-5deg);
+}
 #cherche {
     border: none;
     background-color: #ffff;
@@ -283,6 +287,7 @@ div.article1 {
 .image-container {
     position: relative;
     display: inline-block;
+    transition: all 3s ease;
 }
 
 .items1 {
@@ -320,6 +325,8 @@ div.article1 {
     justify-content: center;
 }
 
+
+
 .items2 , .items3 {
     background-color: #ffff;
     padding: 6px;
@@ -334,7 +341,7 @@ div.article1 {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    transform: translateY(5rem) translateX(-1rem);
+    transform: translateY(2rem) translateX(-1rem);
     padding: 5px;
     border-radius: 5px;
     font-size: 2rem;
@@ -346,8 +353,8 @@ div.article1 {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    transform:  translateY(0.5rem) ;
-    width: 100%;
+    transform:  translateY(0.5rem) translateX(-1.5rem) ;
+    width: 112%;
 }
 
 .sous-big-item1 {
@@ -369,6 +376,7 @@ div.article1 {
 }
 
 .pro {
+    display: inline;
     width: 30%;
     padding: 2px;
     border: none;
@@ -381,6 +389,7 @@ div.article1 {
 
 .pro:hover {
     background-color: #00000000;
+    text-transform: uppercase;
 }
 
 .heart:hover {
@@ -428,4 +437,210 @@ div.article1 {
     text-decoration: none;
     color: #0d0d2c;
     font-size: 14px;
+}
+
+.control1 {
+    transform: translateX(-2.5rem) translateY(0.5rem);
+}
+
+.browser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.5rem;
+    border-width: 3px;
+    background-color: inherit ;
+    color: #0d0d2c;
+}
+
+.titre-1 {
+    border: thin solid #000;
+    border-radius: 30px;
+    padding: 18px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.find-designer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9c056;
+    padding: 40px;
+    margin-top: 5rem;
+}
+
+.find {
+    font-size: 4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    color: #0d0d2c;
+    width: 100%;
+    text-align: center;
+}
+
+.centrer-1 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0d0d2c;
+}
+
+.envoyer {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+
+
+.get , .learn {
+    border: thin solid #000;
+    border-radius: 30px;
+    padding: 18px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+}
+
+.get {
+    background-color: #0d0d2c;
+    color: #ffffff;
+}
+
+.get:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.learn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.are {
+    color: #0d0d2c;
+}
+
+.join {
+    border-bottom: 2px solid #000;
+    font-size: 1.3rem;
+}
+
+.exposition {
+    display: grid;
+    grid-template-columns: repeat(14 , 1fr);
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    overflow-y: visible;
+    white-space: nowrap;
+    box-sizing: content-box;
+    margin-top: 4rem;
+    color: #0d0d2c;
+}
+
+
+.img-expo {
+    width: 220px;
+    height: 180px;
+    border-radius: 0.5rem;
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.6rem;
+    
+}
+
+
+
+
+.point {
+    margin: 3rem;
+    font-size: 2rem;
+}
+
+
+.footer1 {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+.sous-footer1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sous-footer1 > a {
+    font-size: 16px;
+}
+
+.sous-footer2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sous-footer2 > a {
+    font-size: 1.3rem;
+}
+
+[class^='sous-footer'] > a {
+    text-decoration: none;
+    color: #0d0d2c;
+}
+
+.footer2 {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 18rem;
+    align-items: center;
+    justify-content: center; 
+}
+
+.item-footer1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.item-footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+[class^='item-footer'] > a{
+    color: #c0c0c0 ;
+    font-size: 15px;
+    text-decoration: none;  
+}
+
+.image-i1 {
+    width: 60% ;
+    transform: rotate(-5deg) ;
 }
